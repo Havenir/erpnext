@@ -9,7 +9,6 @@ def get_data():
 		},
 		'internal_ref_type_links': {
 			'Purchase Order': ['stock_entry_ref', 'ref_name'],
-			'Journal Entry': ['stock_entry_ref', 'ref_name'],
 			'Purchase Invoice': ['stock_entry_ref', 'ref_name'],
 		},
 		'transactions': [

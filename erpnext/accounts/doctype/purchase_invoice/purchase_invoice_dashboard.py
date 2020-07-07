@@ -10,7 +10,8 @@ def get_data():
 			'Payment Request': 'reference_name',
 			'Landed Cost Voucher': 'receipt_document',
 			'Purchase Invoice': 'return_against',
-			'Auto Repeat': 'reference_document'
+			'Auto Repeat': 'reference_document',
+			'Stock Entry': 'ref_name'
 		},
 		'internal_links': {
 			'Purchase Order': ['items', 'purchase_order'],
@@ -33,5 +34,9 @@ def get_data():
 				'label': _('Subscription'),
 				'items': ['Auto Repeat']
 			},
+			{
+				'label': _('References'),
+				'items': ['Stock Entry']
+			}
 		]
 	}

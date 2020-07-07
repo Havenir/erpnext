@@ -5,9 +5,10 @@ def get_data():
 	return {
 		'fieldname': 'purchase_order',
 		'non_standard_fieldnames': {
-			'Journal Entry': 'reference_name',
+			'Journal Entry': 'ref_name',
 			'Payment Entry': 'reference_name',
-			'Auto Repeat': 'reference_document'
+			'Auto Repeat': 'reference_document',
+			'Stock Entry': 'ref_name'
 		},
 		'internal_links': {
 			'Material Request': ['items', 'material_request'],
