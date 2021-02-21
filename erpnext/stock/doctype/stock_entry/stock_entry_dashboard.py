@@ -11,6 +11,9 @@ def get_data():
 			'Purchase Order': ['stock_entry_ref', 'ref_name'],
 			'Purchase Invoice': ['stock_entry_ref', 'ref_name'],
 			'Stock Entry': ['stock_entry_ref', 'ref_name'],
+			'Sales Invoice': ['stock_entry_ref', 'ref_name'],
+			'Sales Order': ['stock_entry_ref', 'ref_name'],
+			'Payment Entry': ['stock_entry_ref', 'ref_name'],
 		},
 		'transactions': [
 			{
@@ -19,7 +22,7 @@ def get_data():
 			},
 			{
 				'label': _('References'),
-				'items': ['Purchase Order', 'Purchase Invoice', 'Stock Entry']
+				'items': ['Purchase Order', 'Purchase Invoice', 'Stock Entry', 'Sales Invoice', 'Sales Order', 'Payment Entry']
 			}
 		]
 	}
