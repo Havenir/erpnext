@@ -11,6 +11,7 @@ def get_data():
 			'Payment Request': 'reference_name',
 			'Sales Invoice': 'return_against',
 			'Auto Repeat': 'reference_document',
+			'Stock Entry': 'ref_name'
 		},
 		'internal_links': {
 			'Sales Order': ['items', 'sales_order']
@@ -22,7 +23,7 @@ def get_data():
 			},
 			{
 				'label': _('Reference'),
-				'items': ['Timesheet', 'Delivery Note', 'Sales Order']
+				'items': ['Timesheet', 'Delivery Note', 'Sales Order', 'Stock Entry']
 			},
 			{
 				'label': _('Returns'),
