@@ -102,6 +102,7 @@ def create_qr_code(doc, method=None):
 
 		# base64 conversion for QR Code
 		base64_string = b64encode(bytes.fromhex(tlv_buff)).decode()
+		doc.db_set('ksa_einv_qr_hash', base64_string)
 
 		qr_image = io.BytesIO()
 		url = qr_create(base64_string, error='L')
